@@ -180,6 +180,6 @@ section .sz{
     }
     @media (max-width: 320px){
         .lft{
-            margin-left: 0px;
+            margin-left: 0px !important;
         }
     }
