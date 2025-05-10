@@ -1,0 +1,185 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .section {
+      padding: 100px 0;
+    }
+    .shadow-hover:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
+      transition: all 0.3s ease-in-out;
+    }
+   
+.nav-animated .nav-item {
+  position: relative;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: slideDownSmooth 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.nav-animated .nav-item:nth-child(1) { animation-delay: 0.2s; }
+.nav-animated .nav-item:nth-child(2) { animation-delay: 0.35s; }
+.nav-animated .nav-item:nth-child(3) { animation-delay: 0.5s; }
+.nav-animated .nav-item:nth-child(4) { animation-delay: 0.65s; }
+.nav-animated .nav-item:nth-child(5) { animation-delay: 0.8s; }
+.nav-animated .nav-item:nth-child(6) { animation-delay: 0.95s; }
+
+@keyframes slideDownSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  right: 0;
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+    .nav-link {
+      transition: 0.3s;
+    }
+    .nav-link:hover {
+      color: #0d6efd !important;
+    }
+    .service-img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: .5rem .5rem 0 0;
+    }
+.shd {
+  transition: all 0.3s ease-in-out; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.shd:hover {
+  transform: translateY(-12px); 
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.466); 
+}
+.shd{
+    box-shadow: 0 15px 40px rgba(143, 142, 142, 0.553)
+}
+
+
+
+
+.service-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-img:hover {
+  transform: scale(1.05); 
+}
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+   .section-title-with-line {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 2rem;
+  gap: 12px;
+  
+}
+
+
+.line-after {
+  display: inline-block;
+  width: 80px; 
+  height: 3px;
+  background-color: #007bff; 
+  flex-shrink: 0;
+}
+
+
+    .portfolio-img {
+      height: 250px;
+      object-fit: cover;
+      border-radius: .5rem;
+    }
+   .testimonial-bg {
+      background: url('images/bg-dollar.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-color: rgba(233, 231, 231, 0.513);
+      background-attachment: fixed;
+}
+
+.portfolio-img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.08);
+}
+.portfolio-img + h5 {
+  transition: all 0.4s ease;
+  position: relative;
+  top: 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/* Jab image hover ho, tab h5 animate ho */
+.portfolio-img:hover + h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  top: 8px; /* Neeche ki taraf slide */
+}
+ .headers{
+    height: 400px;
+ }
+ .hv{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+ }
+ 
+.mrgn{
+    margin-top: -20px;
+}
+section .sz{
+    font-size: 20px;
+}
+.lft{
+    margin-left: -70px;
+    font-size: 25px;
+}
+    footer {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+    @media (max-width: 320px){
+        .lft{
+            margin-left: 0px;
+        }
+    }
