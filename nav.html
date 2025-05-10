@@ -1,0 +1,379 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaikh's Real Estate</title>
+  <link rel="icon" href="images/sss.png" type="image">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .section {
+      padding: 100px 0;
+    }
+    .shadow-hover:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
+      transition: all 0.3s ease-in-out;
+    }
+   
+.nav-animated .nav-item {
+  position: relative;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: slideDownSmooth 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.nav-animated .nav-item:nth-child(1) { animation-delay: 0.2s; }
+.nav-animated .nav-item:nth-child(2) { animation-delay: 0.35s; }
+.nav-animated .nav-item:nth-child(3) { animation-delay: 0.5s; }
+.nav-animated .nav-item:nth-child(4) { animation-delay: 0.65s; }
+.nav-animated .nav-item:nth-child(5) { animation-delay: 0.8s; }
+.nav-animated .nav-item:nth-child(6) { animation-delay: 0.95s; }
+
+@keyframes slideDownSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  right: 0;
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+    .nav-link {
+      transition: 0.3s;
+    }
+    .nav-link:hover {
+      color: #0d6efd !important;
+    }
+    .service-img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: .5rem .5rem 0 0;
+    }
+.shd {
+  transition: all 0.3s ease-in-out; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.shd:hover {
+  transform: translateY(-12px); 
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.466); 
+}
+.shd{
+    box-shadow: 0 15px 40px rgba(143, 142, 142, 0.553)
+}
+
+
+
+
+.service-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-img:hover {
+  transform: scale(1.05); 
+}
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+   .section-title-with-line {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 2rem;
+  gap: 12px;
+  
+}
+
+
+.line-after {
+  display: inline-block;
+  width: 80px; 
+  height: 3px;
+  background-color: #007bff; 
+  flex-shrink: 0;
+}
+
+
+    .portfolio-img {
+      height: 250px;
+      object-fit: cover;
+      border-radius: .5rem;
+    }
+   .testimonial-bg {
+      background: url('images/bg-dollar.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-color: rgba(233, 231, 231, 0.513);
+      background-attachment: fixed;
+}
+
+.portfolio-img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.08);
+}
+.portfolio-img + h5 {
+  transition: all 0.4s ease;
+  position: relative;
+  top: 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/* Jab image hover ho, tab h5 animate ho */
+.portfolio-img:hover + h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  top: 8px; /* Neeche ki taraf slide */
+}
+ .headers{
+    height: 400px;
+ }
+ .hv{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+ }
+ 
+.mrgn{
+    margin-top: -20px;
+}
+section .sz{
+    font-size: 20px;
+}
+.lft{
+    margin-left: -70px;
+    font-size: 25px;
+}
+    footer {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+    @media (max-width: 320px){
+        .lft{
+            margin-left: 0px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <!-- <a class="navbar-brand fw-bold text-primary lft" href="#home">Shaikh's Property</a> -->
+       <img src="images/sss.png" alt="" width="85" height="70" class="lft">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav-animated">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="section bg-primary text-white text-center headers">
+    <div class="container">
+      <h1 class="display-4 fw-semibold">Find Your Perfect Property</h1>
+      <p class="lead">Connecting people with their dream homes</p>
+      <a href="#contact" class="btn btn-light btn-lg mt-4 shadow-hover hv">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+  <div class="container text-center">
+    <h2 class="section-title-with-line text-start">
+  Our Services
+  <span class="line-after"></span>
+</h2>
+
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="border rounded shd overflow-hidden"> <!-- Added class 'shd' here -->
+          <img src="images/1.jfif" alt="Buying" class="w-100 service-img">
+          <div class="p-4">
+            <h5 class="fw-semibold">Property Buying</h5>
+            <p>Expert help in choosing and negotiating the right property.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="border rounded shd overflow-hidden"> <!-- Added class 'shd' here -->
+          <img src="images/2.jfif" alt="Selling" class="w-100 service-img">
+          <div class="p-4">
+            <h5 class="fw-semibold">Selling Assistance</h5>
+            <p>Market evaluation and high-visibility listings to sell fast.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="border rounded shd overflow-hidden"> <!-- Added class 'shd' here -->
+          <img src="images/3..jpg" alt="Rental" class="w-100 service-img">
+          <div class="p-4">
+            <h5 class="fw-semibold">Rental Management</h5>
+            <p>We manage your tenants, leases, and maintenance needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- About -->
+  <section id="about" class="section bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="section-title">About Us</h2>
+          <p class="mrgn">Elite Real Estate has been a trusted name in property services for over a decade. We prioritize transparency, customer service, and your satisfaction.At <b class="sz">Shaikh's States</b>, we are dedicated to helping you find your dream property. With years of experience in the real estate market, we understand that buying, selling, or renting a property is one of the most significant decisions you’ll ever make. Our team is committed to providing you with personalized, trustworthy, and expert guidance every step of the way.
+
+Whether you’re a first-time homebuyer, a seasoned investor, or looking for rental properties, we offer a wide range of services to cater to your needs. We take pride in our in-depth knowledge of the market, attention to detail, and our strong commitment to client satisfaction.
+
+Our mission is simple: to make your real estate journey smooth, efficient, and enjoyable. From finding the perfect property to handling paperwork,ongoing support, we are here to ensure you make the best choices for your future.
+
+Trust <b class="sz">Shaikh's States</b> for all your real estate needs. We’re not just helping you buy or sell a property; we’re helping you build your future.</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="About" class="img-fluid rounded shadow-hover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section">
+    <div class="container text-center">
+      <h2 class="section-title">Our Portfolio</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="images/11.jpg" class="img-fluid portfolio-img shadow-hover w-100"  alt="Modern Villa">
+          <h5 class="mt-2">Modern Villa</h5>
+        </div>
+        <div class="col-md-4">
+          <img src="images/22.webp" class="img-fluid portfolio-img shadow-hover w-100" alt="Luxury Bungalow">
+          <h5 class="mt-2">Luxury Bungalow</h5>
+        </div>
+        <div class="col-md-4">
+          <img src="images/33.png" class="img-fluid portfolio-img shadow-hover w-100" alt="Classic Estate">
+          <h5 class="mt-2">Classic Estate</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section testimonial-bg text-dark">
+    <div class="container text-center">
+      <h2 class="section-title text">What Our Clients Say</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 border rounded bg-white shadow-hover">
+            <p class="mb-2">“Professional, quick, and effective. I found my home with ease!”</p>
+            <strong>- Muhammad Ibad</strong>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 border rounded bg-white shadow-hover">
+            <p class="mb-2">“Excellent service! The team is friendly and responsive.”</p>
+            <strong>- Zohaib Ahmed</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container text-center">
+      <h2 class="section-title">Contact Us</h2>
+      <form id="contactForm" class="row g-3 justify-content-center">
+        <div class="col-md-5">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-5">
+          <input type="email" class="form-control" placeholder="Your Email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+        </div>
+        <div class="col-md-10">
+          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-md-10 text-end">
+          <button type="submit" class="btn btn-primary shadow-hover">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Shaikh's Real Estate. All rights reserved. <br> <span class="fs-5 fw-bold">MAde by Ibad</span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const confirmSend = confirm("You agree to send your form?");
+      if (confirmSend) {
+        alert("Your message has been sent successfully!");
+        this.reset();
+      }
+    });
+  </script>
+</body>
+</html>
