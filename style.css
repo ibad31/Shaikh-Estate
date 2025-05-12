@@ -97,19 +97,30 @@
   transform: scale(1.05); 
 }
 
-    .section-title {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin-bottom: 40px;
-    }
-   .section-title-with-line {
+   .section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: -35px;
+}
+
+.section-line {
+  height: 4px;
+  width: 100%;
+  max-width: 120px;
+  background-color: #007bff;
+  margin-bottom: 40px;
+  margin-left: 600px; /* Yeh fixed value responsive nahi hoti */
+}
+
+.section-title-with-line {
   display: flex;
   align-items: center;
   font-weight: 600;
   font-size: 2rem;
   gap: 12px;
-  
+  margin-top: 60px; /* sirf title ka margin */
 }
+
 
 
 .line-after {
@@ -118,6 +129,37 @@
   height: 3px;
   background-color: #007bff; 
   flex-shrink: 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* نیلی لائن پوری width میں */
+.full-width-line {
+  height: 4px;
+  width: 100%;
+  max-width: 120px; 
+  margin-left: 100px;
+  background-color: #007bff;
+  margin-bottom: 40px;
+}
+
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: -70px;
+}
+
+.blue-line {
+  width: 100%;
+  max-width: 120px;
+  height: 4px;
+  background-color: #007bff;
 }
 
 
@@ -165,7 +207,9 @@
  }
  
 .mrgn{
-    margin-top: -20px;
+    /* margin-top: -30px; */
+    text-align: justify;
+    padding-inline: 10px;
 }
 section .sz{
     font-size: 20px;
@@ -182,4 +226,34 @@ section .sz{
         .lft{
             margin-left: 0px !important;
         }
+        .section-line{
+          margin-left: 0px;
+        }
     }
+    @media (max-width: 768px) {
+  .section-line {
+    max-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Extra small screens (e.g. very small phones) */
+@media (max-width: 480px) {
+  .section-line {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blue-line {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blue-line {
+    max-width: 120px;
+  }
+}
+
