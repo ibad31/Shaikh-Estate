@@ -268,7 +268,7 @@ section .sz{
     font-size: 25px;
 }
     footer {
-      background-color: #f8f9fa;
+      background-color: #78797a6c;
       padding: 40px 0;
     }
     @media (max-width: 320px){
