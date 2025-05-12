@@ -185,27 +185,28 @@
   padding: 40px;
   border-radius: 8px;
   margin-top: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
+
 .form-dark .form-control {
-  background-color: #007bff; /* Dark background for inputs */
-  border: 2px solid black; /* Light border color */
-  color: #ecf0f1;  /* Light text color for readability */
+  background-color: white; 
+  border: 2px solid black; 
+  color: #ecf0f1;  
   border-radius: 4px;
 }
 
 .form-dark .form-control::placeholder {
-  color: #bdc3c7;  /* Lighter placeholder text */
+  color: black;  
 }
 
 .form-dark .btn-primary {
-  background-color: black;  /* Darker button */
+  background-color: black;  
   border-color: #2980b9;
 }
 
 .form-dark .btn-primary:hover {
-  background-color: #3498db;  /* Hover effect */
+  background-color: #3498db;  
   border-color: #3498db;
 }
 
