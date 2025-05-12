@@ -163,6 +163,54 @@
 }
 
 
+/* Styling the contact section */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: -70px; /* Top margin to prevent overlapping */
+}
+
+.blue-line {
+  width: 100%;
+  max-width: 120px;
+  height: 4px;
+  margin-top: px;
+  background-color: #007bff;
+   /* Centered blue line with space above and below */
+}
+
+/* Form Dark Styling */
+.form-dark {
+  background-color: #007bff;  /* Dark background */
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-dark .form-control {
+  background-color: #007bff; /* Dark background for inputs */
+  border: 2px solid black; /* Light border color */
+  color: #ecf0f1;  /* Light text color for readability */
+  border-radius: 4px;
+}
+
+.form-dark .form-control::placeholder {
+  color: #bdc3c7;  /* Lighter placeholder text */
+}
+
+.form-dark .btn-primary {
+  background-color: black;  /* Darker button */
+  border-color: #2980b9;
+}
+
+.form-dark .btn-primary:hover {
+  background-color: #3498db;  /* Hover effect */
+  border-color: #3498db;
+}
+
+
+
     .portfolio-img {
       height: 250px;
       object-fit: cover;
